@@ -1,0 +1,5 @@
+﻿,"ID","name","mass",power,"damage","range",cooldown
+0,"10","small laser","1",10,"5","200",2
+1,"11","medium laser","3",20,"10","300",3
+2,"12","large laser","10",40,"15","450",4
+3,"13","missile","7",10,"10","500",5

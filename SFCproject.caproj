@@ -1,0 +1,3406 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>SFCproject</name>
+    <description></description>
+    <version>0.01</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id></app-id>
+    <unique-id>5olyh74ozq5c</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_CSV" version="1">CSV</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="NoSave" version="1">No Save</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="brightness">Brightness</effect>
+        <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
+        <effect author="Scirra" id="multiply">Multiply</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Diagram</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="arrays">
+            <object-type global="1" name="arr_InvEnemy" sid="957024013260020">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="capacitor" sid="985064884632106" type="number" />
+                    <instance-variable name="ECM" sid="673139181340494" type="number" />
+                    <instance-variable name="TC" sid="749669309230255" type="number" />
+                </instance-variables>
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="enemyInventory" sid="2947517107153478">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Type" sid="2310912720477106" type="number" />
+                    <instance-variable name="Engine" sid="6826812906134677" type="number" />
+                    <instance-variable name="Hull0" sid="4583296077457948" type="number" />
+                    <instance-variable name="Hull1" sid="7594200012039926" type="number" />
+                    <instance-variable name="Hull2" sid="3631373611907720" type="number" />
+                    <instance-variable name="Hull3" sid="2269724458109307" type="number" />
+                    <instance-variable name="Hull4" sid="4810625913311934" type="number" />
+                    <instance-variable name="Prow0" sid="9917338129645368" type="number" />
+                    <instance-variable name="Prow1" sid="268514976739325" type="number" />
+                    <instance-variable name="Prow2" sid="5709134090875048" type="number" />
+                    <instance-variable name="Prow3" sid="6419248751976528" type="number" />
+                    <instance-variable name="Prow4" sid="6097276676953636" type="number" />
+                    <instance-variable name="SB0" sid="1974232082394744" type="number" />
+                    <instance-variable name="SB1" sid="7905065974165348" type="number" />
+                    <instance-variable name="SB2" sid="8257776289903620" type="number" />
+                    <instance-variable name="SB3" sid="2474586537672655" type="number" />
+                    <instance-variable name="SB4" sid="8511166038617451" type="number" />
+                    <instance-variable name="Aft0" sid="2040502960301891" type="number" />
+                    <instance-variable name="Aft1" sid="3318508587071478" type="number" />
+                    <instance-variable name="Aft2" sid="2551150821513684" type="number" />
+                    <instance-variable name="Aft3" sid="8574275119179581" type="number" />
+                    <instance-variable name="Aft4" sid="2485280833635722" type="number" />
+                    <instance-variable name="Port0" sid="8686635494923297" type="number" />
+                    <instance-variable name="Port1" sid="3488832049191264" type="number" />
+                    <instance-variable name="Port2" sid="7982614993588740" type="number" />
+                    <instance-variable name="Port3" sid="4890833548162636" type="number" />
+                    <instance-variable name="Port4" sid="7554360299947317" type="number" />
+                    <instance-variable name="Shield1" sid="5052356353870772" type="number" />
+                    <instance-variable name="Shield2" sid="9803206787194870" type="number" />
+                    <instance-variable name="Shield3" sid="6411113282807221" type="number" />
+                    <instance-variable name="Shield4" sid="1648285537353686" type="number" />
+                    <instance-variable name="Range" sid="5815661858491695" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_TargetList" sid="144694788017927">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="arr_enemyWPN_0" sid="492655102749059">
+                <plugin id="Arr" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="arr_enemyWPN_1" sid="470848997470195">
+                <plugin id="Arr" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="arr_enemyWPN_2" sid="294170451913019">
+                <plugin id="Arr" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="arr_enemyWPN_3" sid="246505661845522">
+                <plugin id="Arr" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="arr_enemyWPN_4" sid="687018381546879">
+                <plugin id="Arr" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+            </object-type>
+            <object-type global="1" name="arr_InvPCship" sid="949436337894936">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="arr_All_Items" sid="2821810640511568">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="name" sid="8616884014893343" type="number" />
+                    <instance-variable name="type" sid="9529514326971411" type="number" />
+                    <instance-variable name="ID" sid="1405233341933021" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_enemyInventory" sid="6115263727418787">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Type" sid="3678381628531101" type="number" />
+                    <instance-variable name="Engine" sid="4810369513349147" type="number" />
+                    <instance-variable name="Hull0" sid="2296337894231050" type="number" />
+                    <instance-variable name="Hull1" sid="6270583772704670" type="number" />
+                    <instance-variable name="Hull2" sid="4809238013083531" type="number" />
+                    <instance-variable name="Hull3" sid="7376441481915733" type="number" />
+                    <instance-variable name="Hull4" sid="7293968347927541" type="number" />
+                    <instance-variable name="Prow0" sid="8620806066103643" type="number" />
+                    <instance-variable name="Prow1" sid="9711601154265862" type="number" />
+                    <instance-variable name="Prow2" sid="7839424659624897" type="number" />
+                    <instance-variable name="Prow3" sid="2539325741538948" type="number" />
+                    <instance-variable name="Prow4" sid="825358634574966" type="number" />
+                    <instance-variable name="SB0" sid="5449569435426085" type="number" />
+                    <instance-variable name="SB1" sid="4725533676686835" type="number" />
+                    <instance-variable name="SB2" sid="5883552397281502" type="number" />
+                    <instance-variable name="SB3" sid="6026701107299075" type="number" />
+                    <instance-variable name="SB4" sid="2877240949671551" type="number" />
+                    <instance-variable name="Aft0" sid="6416568476272338" type="number" />
+                    <instance-variable name="Aft1" sid="9762820193183405" type="number" />
+                    <instance-variable name="Aft2" sid="2125819502052260" type="number" />
+                    <instance-variable name="Aft3" sid="5873923330724013" type="number" />
+                    <instance-variable name="Aft4" sid="5751179870151596" type="number" />
+                    <instance-variable name="Port0" sid="6025665978284700" type="number" />
+                    <instance-variable name="Port1" sid="1795759799691728" type="number" />
+                    <instance-variable name="Port2" sid="1064757915325040" type="number" />
+                    <instance-variable name="Port3" sid="9144538014670680" type="number" />
+                    <instance-variable name="Port4" sid="6473062500421728" type="number" />
+                    <instance-variable name="Range" sid="4599272715239984" type="number" />
+                    <instance-variable name="armor_0" sid="7250309289459683" type="number" />
+                    <instance-variable name="armor_1" sid="1725787919243950" type="number" />
+                    <instance-variable name="armor_2" sid="2949124356132774" type="number" />
+                    <instance-variable name="armor_3" sid="7911736856838598" type="number" />
+                    <instance-variable name="armor_4" sid="3420192928917464" type="number" />
+                    <instance-variable name="shield_1" sid="2774832826453150" type="number" />
+                    <instance-variable name="shield_2" sid="7308472762893511" type="number" />
+                    <instance-variable name="shield_3" sid="410740924755751" type="number" />
+                    <instance-variable name="shield_4" sid="3934389440864356" type="number" />
+                    <instance-variable name="Name" sid="4348943330609729" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_HitLocations" sid="6764277246666348">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Front" sid="9002262850121947" type="number" />
+                    <instance-variable name="Starboard" sid="8807704752428679" type="number" />
+                    <instance-variable name="Aft" sid="6719697947816405" type="number" />
+                    <instance-variable name="Port" sid="2987361863692909" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_items_Engines" sid="3164750810302211">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="id" sid="2808795963232764" type="number" />
+                    <instance-variable name="engine" sid="6884767680623154" type="number" />
+                    <instance-variable name="mass" sid="2563911357742753" type="number" />
+                    <instance-variable name="power" sid="4833363613073255" type="number" />
+                    <instance-variable name="RechargeRate" sid="7817025574808230" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_items_Equip" sid="4284720520261403">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="id" sid="1174682137697288" type="number" />
+                    <instance-variable name="name" sid="9930407585400842" type="number" />
+                    <instance-variable name="mass" sid="3596594596105070" type="number" />
+                    <instance-variable name="power" sid="2361108042514214" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_items_Weapons" sid="3352213057079797">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="id" sid="7486221368223317" type="number" />
+                    <instance-variable name="name" sid="5662557005539016" type="number" />
+                    <instance-variable name="damage" sid="2839451011539072" type="number" />
+                    <instance-variable name="range" sid="5322072267676845" type="number" />
+                    <instance-variable name="mass" sid="7505013955039309" type="number" />
+                    <instance-variable name="heat" sid="8385885550368433" type="number" />
+                    <instance-variable name="cooldown" sid="6954022302757822" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipAft" sid="7693087995998600">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Inventory" sid="2660769514551087" type="number" />
+                    <instance-variable name="ID" sid="7092503716443253" type="number" />
+                    <instance-variable name="Damage" sid="1630125073253188" type="number" />
+                    <instance-variable name="Range" sid="7228785138811428" type="number" />
+                    <instance-variable name="Power" sid="8134775458428749" type="number" />
+                    <instance-variable name="Cooldown" sid="7570076311634383" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipHull" sid="372841967284335">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Inventory" sid="4835618140261201" type="number" />
+                    <instance-variable name="ID" sid="15011348334788" type="number" />
+                    <instance-variable name="Damage" sid="8085026855771484" type="number" />
+                    <instance-variable name="Range" sid="6183185269188466" type="number" />
+                    <instance-variable name="Power" sid="1480340733944329" type="number" />
+                    <instance-variable name="Cooldown" sid="9962956955801800" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipEngine" sid="8067680210988083">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="EngineID" sid="7188847678485955" type="number" />
+                    <instance-variable name="ShipType" sid="2963753184185815" type="number" />
+                    <instance-variable name="acc" sid="7530012439983261" type="number" />
+                    <instance-variable name="maxSpeed" sid="970391650429109" type="number" />
+                    <instance-variable name="power" sid="425212296689710" type="number" />
+                    <instance-variable name="recharge" sid="380747726795332" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipPort" sid="5469445186042819">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Inventory" sid="7809654071076585" type="number" />
+                    <instance-variable name="ID" sid="7030211201231714" type="number" />
+                    <instance-variable name="Damage" sid="8914165995223753" type="number" />
+                    <instance-variable name="Range" sid="8462507578943199" type="number" />
+                    <instance-variable name="Power" sid="9596334143069882" type="number" />
+                    <instance-variable name="Cooldown" sid="5957199716636168" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipProw" sid="6238899405710059">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Inventory" sid="9684528061476043" type="number" />
+                    <instance-variable name="ID" sid="7106504690651871" type="number" />
+                    <instance-variable name="Damage" sid="740213342164189" type="number" />
+                    <instance-variable name="Range" sid="1438083821455288" type="number" />
+                    <instance-variable name="Power" sid="3368640586228718" type="number" />
+                    <instance-variable name="Cooldown" sid="2747490235717881" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipSB" sid="4331493738936194">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="Inventory" sid="628813424506980" type="number" />
+                    <instance-variable name="ID" sid="7085403336359662" type="number" />
+                    <instance-variable name="Damage" sid="6311502298893304" type="number" />
+                    <instance-variable name="Range" sid="955240929417745" type="number" />
+                    <instance-variable name="Power" sid="8243865785551390" type="number" />
+                    <instance-variable name="Cooldown" sid="6950109121856051" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_shipsDB" sid="4211875348678489">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="id" sid="358244722068907" type="number" />
+                    <instance-variable name="type" sid="419271832623238" type="number" />
+                    <instance-variable name="hardpoints" sid="3952479973866944" type="number" />
+                    <instance-variable name="aft" sid="7964296217498239" type="number" />
+                    <instance-variable name="hull" sid="9239382341189514" type="number" />
+                    <instance-variable name="port" sid="7144685423072915" type="number" />
+                    <instance-variable name="starboard" sid="9874550972917836" type="number" />
+                    <instance-variable name="prow" sid="5916793069607404" type="number" />
+                    <instance-variable name="tonnage" sid="580878205738463" type="number" />
+                    <instance-variable name="DCbonus" sid="422848056868012" type="number" />
+                    <instance-variable name="rotateSpeed" sid="1502928819612922" type="number" />
+                    <instance-variable name="armor_0" sid="2203276678519130" type="number" />
+                    <instance-variable name="armor_1" sid="3513344754188685" type="number" />
+                    <instance-variable name="armor_2" sid="4545980384407689" type="number" />
+                    <instance-variable name="armor_3" sid="6587888882876871" type="number" />
+                    <instance-variable name="armor_4" sid="73770547490408" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_PCShipInventory" sid="633864308841562">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="ECM" sid="973086912541195" type="number" />
+                    <instance-variable name="TC" sid="669942141829503" type="number" />
+                    <instance-variable name="capacitor" sid="257039230230321" type="number" />
+                    <instance-variable name="shield1_STR" sid="996315720894053" type="number" />
+                    <instance-variable name="shield2_STR" sid="787987301781828" type="number" />
+                    <instance-variable name="shield3_STR" sid="574536770264113" type="number" />
+                    <instance-variable name="shield4_STR" sid="171758327722632" type="number" />
+                    <instance-variable name="s1_oSTR" sid="462005422390837" type="number" />
+                    <instance-variable name="s2_oSTR" sid="745437310738770" type="number" />
+                    <instance-variable name="s3_oSTR" sid="287473052081109" type="number" />
+                    <instance-variable name="s4_oSTR" sid="407558734366509" type="number" />
+                    <instance-variable name="type" sid="231640700349969" type="number" />
+                    <instance-variable name="class" sid="411442347520815" type="number" />
+                    <instance-variable name="totalPower" sid="850028428993553" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type global="1" name="arr_DamList" sid="579255050522189">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="arr_PCShipAmmo" sid="916826389511231">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="393973156961524" type="number" />
+                    <instance-variable name="ammoCount" sid="314909043535011" type="number" />
+                </instance-variables>
+            </object-type>
+        </object-folder>
+        <object-folder name="buttons">
+            <object-type name="btt_Diagram" sid="498981797320399">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btt_Eng" sid="8725365863193848">
+                <plugin id="Button" />
+                <instance-variables>
+                    <instance-variable name="var_engines" sid="5498359118382721" type="boolean" />
+                </instance-variables>
+            </object-type>
+            <object-type name="btt_Shld" sid="3150452539173524">
+                <plugin id="Button" />
+                <instance-variables>
+                    <instance-variable name="var_shields" sid="4926320715393957" type="boolean" />
+                </instance-variables>
+            </object-type>
+            <object-type name="btt_Wpn" sid="9531692505209976">
+                <plugin id="Button" />
+                <instance-variables>
+                    <instance-variable name="var_weapons" sid="6256113282643673" type="boolean" />
+                </instance-variables>
+            </object-type>
+            <object-type name="btt_reset" sid="286929706535394">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btt_back" sid="277460379360546">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btt_setConfirm" sid="770114509624406">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_camp" sid="584775629388673">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_exit" sid="890600742847247">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_options" sid="650090757929372">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_shipYard" sid="962312446615243">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_skirmish" sid="312661671234552">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_apply" sid="390513135398396">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_RTM" sid="417446022631394">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="btn_cont" sid="866527998704862">
+                <plugin id="Button" />
+                <instance-variables>
+                    <instance-variable name="saveText" sid="174101318397738" type="string" />
+                </instance-variables>
+            </object-type>
+        </object-folder>
+        <object-folder name="text box">
+            <object-folder name="Diagram">
+                <object-type name="txt_ShpInfoAcc" sid="967227133868765">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoMaxSp" sid="864121179378629">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelWpns" sid="203705282699374">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelEng" sid="597501084674329">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelEquip" sid="718556613016415">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_loadDefaultShipList" sid="999112499105944">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelHull" sid="662034193077575">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelAft" sid="208761137104766">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelPort" sid="859048636798557">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelSB" sid="900444006702992">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_LabelProw" sid="182708181434635">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_mountedEngine" sid="596495858151394">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="isEngine" sid="276893310640928" type="boolean" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_ShpInfoTonn" sid="230457816342612">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_Debug2" sid="978726706269620">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_mountedItem" sid="235659326715032">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="place" sid="885339418548312" type="number" />
+                        <instance-variable name="arrID" sid="625045831317082" type="number" />
+                        <instance-variable name="isEngine" sid="679333537540310" type="boolean" />
+                        <instance-variable name="itemID" sid="758994771572498" type="string" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_ShpInfoClass" sid="935692850438676">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoType" sid="714279512229183">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoCrew" sid="715413863994416">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoAmmo" sid="655928007936095">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="wpnType" sid="645945697779435" type="number" />
+                    </instance-variables>
+                    <container>
+                        <type>txt_ShpInfoAmmo</type>
+                        <type>spr_ammoInc</type>
+                        <type>spr_ammoDec</type>
+                    </container>
+                </object-type>
+                <object-type name="txt_ShpInfoEng" sid="553310930388252">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoCap" sid="115223961342358">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_ShpInfoPow" sid="555916092465716">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Main">
+                <object-type name="txt_CrewCount" sid="996512516838735">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_CrewLBL" sid="614951565166173">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_DamItem" sid="168721803962738">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="visible" sid="832974101237236" type="boolean" />
+                        <instance-variable name="rankList" sid="866601759036562" type="number" />
+                        <instance-variable name="damObj" sid="699726690604880" type="number" />
+                        <instance-variable name="damObjUID" sid="537850122938672" type="number" />
+                        <instance-variable name="damTimerName" sid="357826246517031" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Timer" sid="333659038012860">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <container>
+                        <type>txt_DamItem</type>
+                        <type>spr_repCooldown</type>
+                    </container>
+                </object-type>
+                <object-type name="txt_DamLbl" sid="677348207449222">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_enemyList" sid="592198114687513">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="borderID" sid="440487946477632" type="number" />
+                    </instance-variables>
+                    <container>
+                        <type>txt_enemyList</type>
+                        <type>spr_BRDRenemyList</type>
+                    </container>
+                </object-type>
+                <object-type name="txt_dmg" sid="119263753218404">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="isActive" sid="630899110918077" type="boolean" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_Dock" sid="159351115579605">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Flash" sid="808694121928605">
+                            <behavior id="Flash" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="txt_enemyTypeHUD" sid="849992623212264">
+                    <plugin id="Text" />
+                    <container>
+                        <type>spr_HUDenemy</type>
+                        <type>txt_enemyTypeHUD</type>
+                    </container>
+                </object-type>
+                <object-type name="txt_enemyWPNS" sid="601734163020082">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="place" sid="641582560678377" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_engPower" sid="481505828518402">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Flash" sid="385580751897878">
+                            <behavior id="Flash" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="txt_GameOver" sid="253068662606288">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_heat" sid="237962092451835">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_lblEnemyID" sid="998608135115161">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="460188887213940">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <container>
+                        <type>spr_target</type>
+                        <type>txt_lblEnemyID</type>
+                    </container>
+                </object-type>
+                <object-type name="txt_lblHeat" sid="314144504902162">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_lblPower" sid="9484119589666381">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_lblshipSection" sid="892387315955286">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable comment="how many weapons in this section" name="wpnCount" sid="413761730220623" type="number" />
+                        <instance-variable name="place" sid="323349765292162" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_lblSpeed" sid="753608419654755">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_Power" sid="6667315576488898">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_shipTitle" sid="213199271153887">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_Shld1" sid="393149832687079">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable comment="current level of shield" name="currStr" sid="780472165369251" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_Shld2" sid="724142591746541">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="currStr" sid="853552226047661" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_Shld3" sid="871718500380528">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="currStr" sid="915476582170262" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_Shld4" sid="975634736614913">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="currStr" sid="898879607147812" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="txt_speed" sid="343595130435369">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txt_weapons" sid="929550115904603">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="wpnID" sid="379354761075987" type="number" />
+                        <instance-variable name="place" sid="970228590577989" type="number" />
+                        <instance-variable name="rankLoop" sid="130151777614733" type="number" />
+                        <instance-variable comment="where is the weapon in the array" name="rankArr" sid="762524382140307" type="number" />
+                        <instance-variable name="isRepairing" sid="533795011796634" type="boolean" />
+                        <instance-variable name="isDestroyed" sid="472790231637618" type="boolean" />
+                        <instance-variable name="lblAmmo_UID" sid="588016908898178" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Timer_T" sid="646144128978219">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                        <behavior-type name="Flash" sid="526693767245336">
+                            <behavior id="Flash" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="txt_wpnPower" sid="161255922665584">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="txtbx_Debug" sid="653316161809408">
+                    <plugin id="TextBox" />
+                </object-type>
+                <object-type name="txt_ammo" sid="814536819516202">
+                    <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="wpnLbl_UID" sid="489130660870288" type="number" />
+                        <instance-variable name="wpnID" sid="904947553675220" type="number" />
+                    </instance-variables>
+                </object-type>
+            </object-folder>
+            <object-folder name="Start">
+                <object-type name="Text" sid="791660336499361">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="Text2" sid="331093816331745">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="sprites">
+            <object-folder name="particles">
+                <object-type name="part_PCshipEngine" sid="434699482218459">
+                    <plugin id="Particles" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="200536726707589">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\video\Dropbox\construct assets\sparkle5.png" />
+                </object-type>
+                <object-type name="part_explosions" sid="467773946948613">
+                    <plugin id="Particles" />
+                    <behaviors>
+                        <behavior-type name="Pin" sid="927482376203423">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                        <behavior-type name="Timer" sid="325152404951330">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                        <behavior-type name="Fade" sid="273269041226050">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <effects>
+                        <effect-type name="Brightness">
+                            <effect id="brightness" />
+                        </effect-type>
+                    </effects>
+                    <texture original-source="C:\video\Dropbox\construct assets\sparkle5.png" />
+                </object-type>
+                <object-type name="part_explosions2" sid="342931792333264">
+                    <plugin id="Particles" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="726453305166676">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <effects>
+                        <effect-type name="Brightness">
+                            <effect id="brightness" />
+                        </effect-type>
+                        <effect-type name="AdjustHSL">
+                            <effect id="hsladjust" />
+                        </effect-type>
+                    </effects>
+                    <texture original-source="C:\video\Dropbox\construct assets\sparkle5.png" />
+                </object-type>
+            </object-folder>
+            <object-folder name="enemyDGRM">
+                <object-type name="spr_aftEnemyDGRM" sid="702546618938252">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470331637073302" speed="0">
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_hullEnemyDGRM" sid="687612073528097">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891741832251450" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_portEnemyDGRM" sid="130346354138067">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634936119416081" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_prowEnemyDGRM" sid="288092921746305">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526495297289997" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_SBenemyDGRM" sid="182013989545185">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875520384346303" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="pcDGRM">
+                <object-folder name="Diagram" />
+                <object-folder name="Main" />
+                <object-folder name="Start" />
+                <object-type name="spr_shipDiagram" sid="124204848368673">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="493961172159237" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\player_ship.png">
+                                <collision-poly>
+                                    <point x="0.257143" y="0.1125" />
+                                    <point x="0.5" y="0.2625" />
+                                    <point x="0.771429" y="0.1" />
+                                    <point x="0.871429" y="0.5" />
+                                    <point x="0.8" y="0.9125" />
+                                    <point x="0.5" y="0.95625" />
+                                    <point x="0.228571" y="0.9" />
+                                    <point x="0.157143" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_aftPCDGRM" sid="664355092035167">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222341223636913" speed="0">
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                            <frame duration="1" hotspotX="0.52" hotspotY="0.52" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_hullPCDGRM" sid="285147349830347">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881660194954903" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_portPCDGRM" sid="158795097441061">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409107912480791" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_prowPCDGRM" sid="183353129040789">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="258747596455845" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_SBPCDGRM" sid="257653350347856">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593480315376914" speed="0">
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                            <frame duration="1" hotspotX="0.533333" hotspotY="0.511111" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_Shld1" sid="885471157277748">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112234610809962" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3b1.png">
+                                <collision-poly>
+                                    <point x="0.197368" y="0.104167" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.802632" y="0.104167" />
+                                    <point x="0.5" y="0.493056" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_Shld2" sid="333544374590004">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406638394460952" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3c1.png">
+                                <collision-poly>
+                                    <point x="0.657895" y="0.347222" />
+                                    <point x="0.5" y="0.493056" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.5" y="0.506944" />
+                                    <point x="0.657895" y="0.652778" />
+                                    <point x="0.5" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_Shld3" sid="743483388188135">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497773348896517" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3d1.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.506944" />
+                                    <point x="0.802632" y="0.895833" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.197368" y="0.895833" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_Shld4" sid="353938140818083">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361365807790174" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3a1.png">
+                                <collision-poly>
+                                    <point x="0.342105" y="0.347222" />
+                                    <point x="0.5" y="0.5" />
+                                    <point x="0.342105" y="0.652778" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="explosions">
+                <object-type name="spr_explosion" sid="888929302345563">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="836570755094227">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394967674404754" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\afterglow.png">
+                                <collision-poly>
+                                    <point x="0.222408" y="0.334171" />
+                                    <point x="0.5" y="0.0527638" />
+                                    <point x="0.780936" y="0.329146" />
+                                    <point x="0.801003" y="0.5" />
+                                    <point x="0.779264" y="0.668342" />
+                                    <point x="0.5" y="0.952261" />
+                                    <point x="0.220736" y="0.668342" />
+                                    <point x="0.195652" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\inferno.png">
+                                <collision-poly>
+                                    <point x="0.222408" y="0.334171" />
+                                    <point x="0.5" y="0.0527638" />
+                                    <point x="0.780936" y="0.329146" />
+                                    <point x="0.801003" y="0.5" />
+                                    <point x="0.779264" y="0.668342" />
+                                    <point x="0.5" y="0.952261" />
+                                    <point x="0.220736" y="0.668342" />
+                                    <point x="0.195652" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_explosion2" sid="260478566880566">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="980676261212412">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120747649724511" speed="5">
+                            <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\inferno.png">
+                                <collision-poly>
+                                    <point x="0.119048" y="0.138889" />
+                                    <point x="0.5" y="0.0972222" />
+                                    <point x="0.869048" y="0.152778" />
+                                    <point x="0.940476" y="0.5" />
+                                    <point x="0.821429" y="0.791667" />
+                                    <point x="0.5" y="0.888889" />
+                                    <point x="0.154762" y="0.819444" />
+                                    <point x="0.0595238" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_explosion3" sid="918861284713441">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="484575717944067">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="374531297657418">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <effects>
+                        <effect-type name="AdjustHSL">
+                            <effect id="hsladjust" />
+                        </effect-type>
+                    </effects>
+                    <animation-folder>
+                        <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626230567989674" speed="8">
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.309859" y="0.22" />
+                                    <point x="0.492958" y="0" />
+                                    <point x="0.774648" y="0.16" />
+                                    <point x="0.84507" y="0.5" />
+                                    <point x="0.605634" y="0.72" />
+                                    <point x="0.492958" y="0.73" />
+                                    <point x="0.422535" y="0.7" />
+                                    <point x="0.126761" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.295775" y="0.21" />
+                                    <point x="0.492958" y="0.1" />
+                                    <point x="0.760563" y="0.17" />
+                                    <point x="0.830986" y="0.5" />
+                                    <point x="0.535211" y="0.67" />
+                                    <point x="0.492958" y="0.68" />
+                                    <point x="0.450704" y="0.68" />
+                                    <point x="0.197183" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.28169" y="0.2" />
+                                    <point x="0.492958" y="0.08" />
+                                    <point x="0.732394" y="0.19" />
+                                    <point x="0.802817" y="0.5" />
+                                    <point x="0.492958" y="0.64" />
+                                    <point x="0.492958" y="0.61" />
+                                    <point x="0.56338" y="0.6" />
+                                    <point x="0.211268" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.267606" y="0.19" />
+                                    <point x="0.492958" y="0.06" />
+                                    <point x="0.704225" y="0.21" />
+                                    <point x="0.605634" y="0.5" />
+                                    <point x="0.394366" y="0.57" />
+                                    <point x="0.492958" y="0.54" />
+                                    <point x="0.704225" y="0.5" />
+                                    <point x="0.197183" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.253521" y="0.18" />
+                                    <point x="0.492958" y="0.04" />
+                                    <point x="0.676056" y="0.23" />
+                                    <point x="0.394366" y="0.5" />
+                                    <point x="0.267606" y="0.48" />
+                                    <point x="0.492958" y="0.44" />
+                                    <point x="0.352113" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.28169" y="0.2" />
+                                    <point x="0.492958" y="0.03" />
+                                    <point x="0.492958" y="0.24" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="backgrounds">
+                <object-type name="spr_bckveilneb" sid="178632836906000">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979167909773445" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_bckClouds" sid="925391280380764">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947559893246122" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\video\Dropbox\construct assets\backgrounds\starbackground.jpg" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_bckveilneb2" sid="122320860293879">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817151022875665" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_bckveilneb3" sid="313102244753024">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608021206069803" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_bckveilneb4" sid="547112781497950">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712739588985627" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spr_bckEffect" sid="228164007144639">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="355917378016282">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <effects>
+                        <effect-type name="Brightness">
+                            <effect id="brightness" />
+                        </effect-type>
+                    </effects>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350292920143765" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="spr_Aft" sid="828927723149537">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="NoSave" sid="206018908593936">
+                        <behavior id="NoSave" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425601409274012" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_CooldownBar" sid="599417938860715">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="cooldown" sid="655603687104153" type="number" />
+                    <instance-variable name="textBoxID" sid="923817725002231" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713570909553575" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_wptPC" sid="223962846756678">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Rotate" sid="528202716876928">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294898535647446" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shipEnemy" sid="476575497158960">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="type" sid="878541040564683" type="number" />
+                    <instance-variable name="class" sid="246348418012568" type="number" />
+                    <instance-variable name="name" sid="650097998452014" type="string" />
+                    <instance-variable name="targeted" sid="902561974994779" type="boolean" />
+                    <instance-variable name="setSpeed" sid="707231821873711" type="number" />
+                    <instance-variable name="maxSpeed" sid="606568439342644" type="number" />
+                    <instance-variable name="acceleration" sid="418945230117549" type="number" />
+                    <instance-variable name="rotateSpeed" sid="937538048578889" type="number" />
+                    <instance-variable comment='determines behavior (&quot;patrolling&quot;, &quot;attacking&quot;, &quot;retreating&quot;)' name="state" sid="911146891527901" type="string" />
+                    <instance-variable name="rangeSensor" sid="727620684478860" type="number" />
+                    <instance-variable name="rangeToTarget" sid="461511653771367" type="number" />
+                    <instance-variable name="isMoving" sid="654920638594702" type="boolean" />
+                    <instance-variable name="targetBearing" sid="603772368113636" type="number" />
+                    <instance-variable name="targetAspect" sid="324602875226015" type="number" />
+                    <instance-variable name="capacitors" sid="790940191844881" type="number" />
+                    <instance-variable name="ECM" sid="719818921375354" type="number" />
+                    <instance-variable name="TC" sid="353570041602942" type="number" />
+                    <instance-variable comment="strength of shields at PROW" name="Shield_1" sid="700973167114198" type="number" />
+                    <instance-variable comment="strength of shield at SB" name="Shield_2" sid="464336074719059" type="number" />
+                    <instance-variable name="Shield_3" sid="658066189655737" type="number" />
+                    <instance-variable name="Shield_4" sid="846304856423221" type="number" />
+                    <instance-variable comment="original value in DB" name="Shield_1_o" sid="915006683071575" type="number" />
+                    <instance-variable name="Shield_2_o" sid="481388388056760" type="number" />
+                    <instance-variable name="Shield_3_o" sid="280321779304532" type="number" />
+                    <instance-variable name="Shield_4_o" sid="713223608528843" type="number" />
+                    <instance-variable name="armor_0" sid="631121414613531" type="number" />
+                    <instance-variable name="armor_1" sid="710482065874859" type="number" />
+                    <instance-variable name="armor_2" sid="421557786882069" type="number" />
+                    <instance-variable name="armor_3" sid="210125633449232" type="number" />
+                    <instance-variable name="armor_4" sid="871945590952928" type="number" />
+                    <instance-variable comment="enemy will position at this spot for attacking PC" name="firingSpot" sid="854049162722416" type="number" />
+                    <instance-variable name="power" sid="782300118653401" type="number" />
+                    <instance-variable name="powerReGen" sid="349391334710860" type="number" />
+                    <instance-variable name="powerMax" sid="284189369959438" type="number" />
+                    <instance-variable name="Gunnery" sid="594721135899091" type="number" />
+                    <instance-variable name="Piloting" sid="650401631636190" type="number" />
+                    <instance-variable name="S1_charging" sid="583234290892416" type="boolean" />
+                    <instance-variable name="S2_charging" sid="196940990499414" type="boolean" />
+                    <instance-variable name="S3_charging" sid="405004698501416" type="boolean" />
+                    <instance-variable name="S4_charging" sid="633698515139219" type="boolean" />
+                    <instance-variable name="isECMenabled" sid="748975538244409" type="boolean" />
+                    <instance-variable name="isTCenabled" sid="418228868599611" type="boolean" />
+                    <instance-variable name="isS1enabled" sid="300824217816318" type="boolean" />
+                    <instance-variable name="isS2enabled" sid="449907435932960" type="boolean" />
+                    <instance-variable name="isS3enabled" sid="719900303561629" type="boolean" />
+                    <instance-variable name="isS4enabled" sid="918836299449994" type="boolean" />
+                    <instance-variable name="engineType" sid="631311507658254" type="number" />
+                    <instance-variable name="engineDam" sid="124007013217463" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="MoveTo" sid="710229251467623">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="691393819226180">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="577714373504333">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509189389715454" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\bb18\Dropbox\construct assets\speedship.png">
+                            <image-point name="Imagepoint 1" x="0.84375" y="0.5" />
+                            <image-point name="Imagepoint 2" x="0.4375" y="0.5625" />
+                            <image-point name="Imagepoint 3" x="0.21875" y="0.5" />
+                            <image-point name="Imagepoint 4" x="0.4375" y="0.4375" />
+                            <image-point name="Imagepoint 5" x="0.09375" y="0.46875" />
+                            <image-point name="Imagepoint 6" x="0.09375" y="0.5625" />
+                            <collision-poly>
+                                <point x="0.640625" y="0.359375" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.640625" y="0.640625" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.078125" y="0.5" />
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\shipEnemyC-2.png">
+                            <image-point name="Imagepoint 1" x="0.833333" y="0.5" />
+                            <image-point name="Imagepoint 2" x="0.45" y="0.875" />
+                            <image-point name="Imagepoint 3" x="0.316667" y="0.5" />
+                            <image-point name="Imagepoint 4" x="0.45" y="0.15625" />
+                            <image-point name="Imagepoint 5" x="0.0833333" y="0.28125" />
+                            <image-point name="Imagepoint 6" x="0.0166667" y="0.4375" />
+                            <image-point name="Imagepoint 7" x="0.0166667" y="0.59375" />
+                            <image-point name="Imagepoint 8" x="0.0833333" y="0.71875" />
+                            <collision-poly>
+                                <point x="0.640625" y="0.359375" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.640625" y="0.640625" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.078125" y="0.5" />
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="C:\video\Dropbox\construct assets\shipEnemyB-2.png">
+                            <image-point name="Imagepoint 1" x="0.88" y="0.514286" />
+                            <image-point name="Imagepoint 2" x="0.37" y="0.885714" />
+                            <image-point name="Imagepoint 3" x="0.1" y="0.514286" />
+                            <image-point name="Imagepoint 4" x="0.38" y="0.114286" />
+                            <image-point name="Imagepoint 5" x="0.07" y="0.257143" />
+                            <image-point name="Imagepoint 6" x="0.01" y="0.514286" />
+                            <image-point name="Imagepoint 7" x="0.07" y="0.771429" />
+                            <collision-poly>
+                                <point x="0.640625" y="0.359375" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.640625" y="0.640625" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.078125" y="0.5" />
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.508621" hotspotY="0.512821" original-source="C:\video\Dropbox\construct assets\shipEnemyA-2.png">
+                            <image-point name="Imagepoint 1" x="0.75" y="0.512821" />
+                            <image-point name="Imagepoint 2" x="0.431034" y="0.897436" />
+                            <image-point name="Imagepoint 3" x="0.0689655" y="0.512821" />
+                            <image-point name="Imagepoint 4" x="0.431034" y="0.128205" />
+                            <image-point name="Imagepoint 5" x="0.0517241" y="0.205128" />
+                            <image-point name="Imagepoint 6" x="0.0172414" y="0.384615" />
+                            <image-point name="Imagepoint 7" x="0.0172414" y="0.461538" />
+                            <image-point name="Imagepoint 8" x="0.0172414" y="0.564103" />
+                            <image-point name="Imagepoint 9" x="0.0172414" y="0.666667" />
+                            <image-point name="Imagepoint 10" x="0.0517241" y="0.846154" />
+                            <collision-poly>
+                                <point x="0.640625" y="0.359375" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.640625" y="0.640625" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.078125" y="0.5" />
+                                <point x="0.328125" y="0.328125" />
+                                <point x="0.5" y="0.15625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_eng" sid="6033469930651656">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4435128953924001" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_engines" sid="598213247744429">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818703431613469" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_fireKey" sid="699379238549354">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="place" sid="722867451546693" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="687412516147002" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_fireSpace" sid="514709494090033">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194592786207382" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Hhighlight" sid="504440922365356">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Rotate" sid="140908569746488">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="449028343633302" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_HUDbottom" sid="5965711899251823">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="5547503447574636">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3891473501965698" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_HUDmain" sid="6476974622556378">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="6972225298195124">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463732119985432" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_HUDtop" sid="1245274657471615">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="538312785947027">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2531113410811992" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Hull" sid="667831111045632">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809484110394479" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Hullold" sid="785895108095807">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="hardpoints" sid="804177699282162" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596008891161487" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                            <image-point name="hardpoint1" x="0.5" y="0" />
+                            <image-point name="hardpoint2" x="0.5" y="1" />
+                            <image-point name="hardpoint3" x="1" y="0.506667" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.501333" hotspotY="0.5">
+                            <image-point name="hardpoint1" x="0.501333" y="0" />
+                            <image-point name="hardpoint2" x="0.501333" y="1" />
+                            <image-point name="hardpoint3" x="1" y="0.5" />
+                            <image-point name="hardpoint4" x="0.501333" y="0.5" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="hardpoint1" x="0.5" y="0" />
+                            <image-point name="hardpoint2" x="0.5" y="1" />
+                            <image-point name="hardpoint3" x="1" y="0.5" />
+                            <image-point name="hardpoint4" x="0.5" y="0.5" />
+                            <image-point name="hardpoint5" x="0" y="0.5" />
+                            <image-point name="hardpoint6" x="0.9925" y="0.99" />
+                            <image-point name="hardpoint7" x="0.9925" y="0.005" />
+                            <image-point name="hardpoint8" x="0.755" y="0.485" />
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shipPC" sid="2557528817217803">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="type" sid="464104044701088" type="number" />
+                    <instance-variable name="class" sid="534537916316492" type="number" />
+                    <instance-variable name="name" sid="672793740513775" type="string" />
+                    <instance-variable name="setSpeed" sid="817052627247258" type="number" />
+                    <instance-variable name="maxSpeed" sid="979187121035238" type="number" />
+                    <instance-variable name="acceleration" sid="435068746538626" type="number" />
+                    <instance-variable name="rotateSpeed" sid="404967014960740" type="number" />
+                    <instance-variable name="PowerDrain" sid="141598187357836" type="number" />
+                    <instance-variable name="rangeToTarget" sid="902996363283464" type="number" />
+                    <instance-variable name="capacitors" sid="448582241042166" type="number" />
+                    <instance-variable name="ECM" sid="9839398686222143" type="number" />
+                    <instance-variable comment="targeting computer type" name="TC" sid="497644950401606" type="number" />
+                    <instance-variable name="Shield1" sid="3834954523225717" type="number" />
+                    <instance-variable name="S1_o" sid="506435516506529" type="number" />
+                    <instance-variable name="Shield2" sid="612638208106128" type="number" />
+                    <instance-variable name="S2_o" sid="151991776028422" type="number" />
+                    <instance-variable name="Shield3" sid="548881047661749" type="number" />
+                    <instance-variable name="S3_o" sid="190371944678580" type="number" />
+                    <instance-variable name="Shield4" sid="698999451559317" type="number" />
+                    <instance-variable name="S4_o" sid="468960437735038" type="number" />
+                    <instance-variable name="armor_0" sid="180987739097609" type="number" />
+                    <instance-variable name="armor0o" sid="862014126734891" type="number" />
+                    <instance-variable name="armor_1" sid="266787268415846" type="number" />
+                    <instance-variable name="armor1o" sid="585238746537161" type="number" />
+                    <instance-variable name="armor_2" sid="928457625874058" type="number" />
+                    <instance-variable name="armor2o" sid="133795836899072" type="number" />
+                    <instance-variable name="armor_3" sid="716639267373998" type="number" />
+                    <instance-variable name="armor3o" sid="163987038475517" type="number" />
+                    <instance-variable name="armor_4" sid="767913242434110" type="number" />
+                    <instance-variable name="armor4o" sid="178130145703581" type="number" />
+                    <instance-variable comment="power available for use" name="Power" sid="938484746359446" type="number" />
+                    <instance-variable comment="power regenerated per tick" name="PowerReGen" sid="112478749409003" type="number" />
+                    <instance-variable comment="Maximum Power engine can provide" name="PowerMax" sid="5522235740529057" type="number" />
+                    <instance-variable name="Gunnery" sid="901337546952864" type="number" />
+                    <instance-variable name="Piloting" sid="650047977564860" type="number" />
+                    <instance-variable name="targetUID" sid="215142589355415" type="number" />
+                    <instance-variable name="bearingEnemy" sid="691913938203096" type="number" />
+                    <instance-variable name="S1_charging" sid="859357694511088" type="boolean" />
+                    <instance-variable name="S2_charging" sid="789122729010342" type="boolean" />
+                    <instance-variable name="S3_charging" sid="751584613791335" type="boolean" />
+                    <instance-variable name="S4_charging" sid="736501362511873" type="boolean" />
+                    <instance-variable name="isECMenabled" sid="973975107723677" type="boolean" />
+                    <instance-variable name="isTCenabled" sid="588953967638018" type="boolean" />
+                    <instance-variable name="isS1enabled" sid="844413624477679" type="boolean" />
+                    <instance-variable name="isS2enabled" sid="329691407899744" type="boolean" />
+                    <instance-variable name="isS3enabled" sid="957504690729673" type="boolean" />
+                    <instance-variable name="isS4enabled" sid="633203930122991" type="boolean" />
+                    <instance-variable name="engineType" sid="141801996030699" type="number" />
+                    <instance-variable name="engineDam" sid="171990063568973" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="BoundToLayout" sid="338238259006452">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="6345865401004699">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="429487960447418">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="485860283319594">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Rotate" sid="136886554150553">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3100078571420724" speed="0">
+                        <frame duration="1" hotspotX="0.487179" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\xspr5-2.png">
+                            <image-point name="Imagepoint 1" x="0.948718" y="0.5" />
+                            <image-point name="Imagepoint 2" x="0.487179" y="0.65625" />
+                            <image-point name="Imagepoint 3" x="0.128205" y="0.5" />
+                            <image-point name="Imagepoint 4" x="0.487179" y="0.34375" />
+                            <image-point name="Imagepoint 5" x="0" y="0.125" />
+                            <image-point name="Imagepoint 6" x="0" y="0.875" />
+                            <collision-poly>
+                                <point x="0.742857" y="0.8875" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.228571" y="0.9" />
+                                <point x="0.128571" y="0.5" />
+                                <point x="0.2" y="0.0875" />
+                                <point x="0.5" y="0.04375" />
+                                <point x="0.771429" y="0.1" />
+                                <point x="0.842857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506849" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.739726" y="0.5" />
+                            <image-point name="Imagepoint 2" x="0.438356" y="0.78125" />
+                            <image-point name="Imagepoint 3" x="0.136986" y="0.5" />
+                            <image-point name="Imagepoint 4" x="0.438356" y="0.1875" />
+                            <image-point name="Imagepoint 5" x="0.0958904" y="0.21875" />
+                            <image-point name="Imagepoint 6" x="0.0136986" y="0.40625" />
+                            <image-point name="Imagepoint 7" x="0.0136986" y="0.5625" />
+                            <image-point name="Imagepoint 8" x="0.0958904" y="0.78125" />
+                            <collision-poly>
+                                <point x="0.8875" y="0.257143" />
+                                <point x="0.7375" y="0.5" />
+                                <point x="0.9" y="0.771429" />
+                                <point x="0.5" y="0.871429" />
+                                <point x="0.0875" y="0.8" />
+                                <point x="0.04375" y="0.5" />
+                                <point x="0.1" y="0.228571" />
+                                <point x="0.5" y="0.157143" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="C:\video\Dropbox\construct assets\pcShipB-2.png">
+                            <image-point name="Imagepoint 1" x="0.721311" y="0.511111" />
+                            <image-point name="Imagepoint 2" x="0.672131" y="0.733333" />
+                            <image-point name="Imagepoint 3" x="0.295082" y="0.511111" />
+                            <image-point name="Imagepoint 4" x="0.680328" y="0.266667" />
+                            <image-point name="Imagepoint 5" x="0.0737705" y="0.333333" />
+                            <image-point name="Imagepoint 6" x="0.0245902" y="0.511111" />
+                            <image-point name="Imagepoint 7" x="0.0737705" y="0.688889" />
+                            <collision-poly>
+                                <point x="0.742857" y="0.8875" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.228571" y="0.9" />
+                                <point x="0.128571" y="0.5" />
+                                <point x="0.2" y="0.0875" />
+                                <point x="0.5" y="0.04375" />
+                                <point x="0.771429" y="0.1" />
+                                <point x="0.842857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.509091" original-source="C:\video\Dropbox\construct assets\pcShipA-2.png">
+                            <image-point name="Imagepoint 1" x="0.862319" y="0.509091" />
+                            <image-point name="Imagepoint 2" x="0.514493" y="0.745455" />
+                            <image-point name="Imagepoint 3" x="0.108696" y="0.509091" />
+                            <image-point name="Imagepoint 4" x="0.514493" y="0.254545" />
+                            <image-point name="Imagepoint 5" x="0.188406" y="0.181818" />
+                            <image-point name="Imagepoint 6" x="0.101449" y="0.272727" />
+                            <image-point name="Imagepoint 7" x="0.0652174" y="0.363636" />
+                            <image-point name="Imagepoint 8" x="0.0652174" y="0.654545" />
+                            <image-point name="Imagepoint 9" x="0.108696" y="0.745455" />
+                            <image-point name="Imagepoint 10" x="0.195652" y="0.854545" />
+                            <collision-poly>
+                                <point x="0.742857" y="0.8875" />
+                                <point x="0.5" y="0.7375" />
+                                <point x="0.228571" y="0.9" />
+                                <point x="0.128571" y="0.5" />
+                                <point x="0.2" y="0.0875" />
+                                <point x="0.5" y="0.04375" />
+                                <point x="0.771429" y="0.1" />
+                                <point x="0.842857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Port" sid="260838306082813">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538891838517826" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_PowerBar" sid="921255079381479">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640753150408350" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Prow" sid="935668623886331">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498770929397462" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_SB" sid="825032539572262">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="448476070437300" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_ships" sid="515375867845278">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718084351555990" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SPR_shld" sid="4469175679105972">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="3203647947692412">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3083652343354793" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_target" sid="118695939375322">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="955196186488306">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Rotate" sid="460124842251911">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <container>
+                    <type>spr_target</type>
+                    <type>txt_lblEnemyID</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114142909033222" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_wpn" sid="9764719092736258">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9911807047814359" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_weapons" sid="661586659387069">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405128863544154" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_weapon" sid="750183588062514">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID_name" sid="714516396872269" type="string" />
+                    <instance-variable name="ID_num" sid="100158772711998" type="number" />
+                    <instance-variable name="damage" sid="549987553652778" type="number" />
+                    <instance-variable name="hit" sid="575007418031735" type="boolean" />
+                    <instance-variable name="target" sid="134668485565583" type="number" />
+                    <instance-variable name="targetUID" sid="670813407774200" type="number" />
+                    <instance-variable name="targetSection" sid="324443189777723" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="567107490376541">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="388013996173664">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                    <behavior-type name="MoveTo" sid="458084941280253">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="864620009153485">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="ID_10" pingpong="0" repeatcount="1" repeatto="0" sid="190693095392206" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="ID_11" pingpong="0" repeatcount="1" repeatto="0" sid="767199669428344" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\laser sample.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="ID_12" pingpong="0" repeatcount="1" repeatto="0" sid="577164701170690" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="ID_13" pingpong="0" repeatcount="1" repeatto="0" sid="397853326734689" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_border" sid="244874549191405">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754651500550925" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_equipment" sid="144980211666941">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312371253239787" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\mines_spr3.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_ECM" sid="463060983990888">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423894121736205" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.529412" original-source="C:\video\Dropbox\construct assets\ecmSignal.jpg" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.529412" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_TC" sid="422539766807583">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833136537272189" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\targeting icon.png">
+                            <collision-poly>
+                                <point x="0.257813" y="0.257813" />
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.742188" y="0.257813" />
+                                <point x="0.90625" y="0.5" />
+                                <point x="0.742188" y="0.742188" />
+                                <point x="0.5" y="0.90625" />
+                                <point x="0.257813" y="0.742188" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.257813" y="0.257813" />
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.742188" y="0.257813" />
+                                <point x="0.90625" y="0.5" />
+                                <point x="0.742188" y="0.742188" />
+                                <point x="0.5" y="0.90625" />
+                                <point x="0.257813" y="0.742188" />
+                                <point x="0.09375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_enemyPtr" sid="553103133091745">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="598376244749868">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300669035767224" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_wptEnemy" sid="151122220618574">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="enemyID" sid="343091993095157" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="806839793108631" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldE4" sid="789513541187879">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533689476319868" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3a1.png">
+                            <collision-poly>
+                                <point x="0.342105" y="0.347222" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.342105" y="0.652778" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldE3" sid="639645076353625">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403415415340501" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3d1.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.506944" />
+                                <point x="0.802632" y="0.895833" />
+                                <point x="0.5" y="1" />
+                                <point x="0.197368" y="0.895833" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_HUDenemy" sid="379703192518893">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_HUDenemy</type>
+                    <type>txt_enemyTypeHUD</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114871362845586" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldE1" sid="127911182777089">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794444641065282" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3b1.png">
+                            <collision-poly>
+                                <point x="0.197368" y="0.104167" />
+                                <point x="0.5" y="0" />
+                                <point x="0.802632" y="0.104167" />
+                                <point x="0.5" y="0.493056" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldE2" sid="830336412417880">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357510545614604" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3c1.png">
+                            <collision-poly>
+                                <point x="0.657895" y="0.347222" />
+                                <point x="0.5" y="0.493056" />
+                                <point x="1" y="0.5" />
+                                <point x="0.5" y="0.506944" />
+                                <point x="0.657895" y="0.652778" />
+                                <point x="0.5" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_armMarkE0" sid="553526122619885">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991950997804690" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_armMarkE1" sid="265712550661114">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612815947964697" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_armMarkE2" sid="279565745442977">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="749889059347366" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_title" sid="547945312324078">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="spr_shpBorder" sid="732110883931116">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547342980661590" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldMarkE4" sid="694716093769477">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849193670323797" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldMarkE3" sid="101043423386827">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507534994702850" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldMarkE2" sid="914264837232755">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787493445054251" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_shldMarkE1" sid="902716935891011">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846235427408982" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_armMarkE4" sid="888840934412969">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937396587536204" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_armMarkE3" sid="233705661284405">
+                <plugin id="Sprite" />
+                <container>
+                    <type>spr_shipEnemy</type>
+                    <type>arr_InvEnemy</type>
+                    <type>arr_enemyWPN_0</type>
+                    <type>arr_enemyWPN_1</type>
+                    <type>arr_enemyWPN_2</type>
+                    <type>arr_enemyWPN_3</type>
+                    <type>arr_enemyWPN_4</type>
+                    <type>spr_shldMarkE1</type>
+                    <type>spr_shldMarkE2</type>
+                    <type>spr_shldMarkE3</type>
+                    <type>spr_shldMarkE4</type>
+                    <type>spr_armMarkE0</type>
+                    <type>spr_armMarkE1</type>
+                    <type>spr_armMarkE2</type>
+                    <type>spr_armMarkE3</type>
+                    <type>spr_armMarkE4</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="679272312467497" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_glowEng" sid="755151860819071">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="615746193273810">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="341656275250523">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="AdjustHSL">
+                        <effect id="hsladjust" />
+                    </effect-type>
+                    <effect-type name="Multiply">
+                        <effect id="multiply" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213246530825934" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\afterglow.png">
+                            <collision-poly>
+                                <point x="0.222408" y="0.334171" />
+                                <point x="0.5" y="0.0527638" />
+                                <point x="0.780936" y="0.329146" />
+                                <point x="0.801003" y="0.5" />
+                                <point x="0.779264" y="0.668342" />
+                                <point x="0.5" y="0.952261" />
+                                <point x="0.220736" y="0.668342" />
+                                <point x="0.195652" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\inferno.png">
+                            <collision-poly>
+                                <point x="0.222408" y="0.334171" />
+                                <point x="0.5" y="0.0527638" />
+                                <point x="0.780936" y="0.329146" />
+                                <point x="0.801003" y="0.5" />
+                                <point x="0.779264" y="0.668342" />
+                                <point x="0.5" y="0.952261" />
+                                <point x="0.220736" y="0.668342" />
+                                <point x="0.195652" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_glowWpn" sid="611796324382020">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="607791191835077">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="287289797247427">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="Brightness">
+                        <effect id="brightness" />
+                    </effect-type>
+                    <effect-type name="Multiply">
+                        <effect id="multiply" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858125923527594" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\afterglow.png">
+                            <collision-poly>
+                                <point x="0.222408" y="0.334171" />
+                                <point x="0.5" y="0.0527638" />
+                                <point x="0.780936" y="0.329146" />
+                                <point x="0.801003" y="0.5" />
+                                <point x="0.779264" y="0.668342" />
+                                <point x="0.5" y="0.952261" />
+                                <point x="0.220736" y="0.668342" />
+                                <point x="0.195652" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\inferno.png">
+                            <collision-poly>
+                                <point x="0.222408" y="0.334171" />
+                                <point x="0.5" y="0.0527638" />
+                                <point x="0.780936" y="0.329146" />
+                                <point x="0.801003" y="0.5" />
+                                <point x="0.779264" y="0.668342" />
+                                <point x="0.5" y="0.952261" />
+                                <point x="0.220736" y="0.668342" />
+                                <point x="0.195652" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_hitShld" sid="869408398621269">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="202406819747000">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="500360072176567">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623945840421653" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\project shield3b1.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0" />
+                            <collision-poly>
+                                <point x="0.197368" y="0.104167" />
+                                <point x="0.5" y="0" />
+                                <point x="0.802632" y="0.104167" />
+                                <point x="0.5" y="0.493056" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_speedMarker" sid="804142980426335">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991040812840099" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_speedScale" sid="426845655339394">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266220013758312" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_heatScale" sid="943235656602413">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950475752638015" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_heatMarker" sid="274931487994292">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684136527454811" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_speedSet" sid="227522481386994">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887636709525642" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_speedZero" sid="147052454572124">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704765901850895" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_speedMax" sid="859023456948216">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621355519456260" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_dmgMark" sid="949733203112329">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="99" repeatto="0" sid="487418880068820" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_damBorder" sid="958224203233858">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302804191979214" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_mine" sid="272086825275105">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="isSet" sid="690547126219424" type="boolean" />
+                    <instance-variable comment="set off by this target" name="targetUID" sid="764046867162680" type="number" />
+                    <instance-variable name="damage" sid="475913055546384" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pin" sid="127462075394943">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Timer" sid="887005154478844">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="5" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="924151145434623" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\mines_spr3.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_mineLBL" sid="437144030972699">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="createdMineUID" sid="303293139109799" type="number" />
+                    <instance-variable name="isReady" sid="132073191856779" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Timer" sid="907599161098800">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223681669453608" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\mines_spr3.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.84375" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.84375" y="0.84375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15625" y="0.84375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_starbase" sid="815540601457420">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="level" sid="776806975547373" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Rotate" sid="343040496853360">
+                        <behavior id="Rotate" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814959722225737" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\starbase-tex.png">
+                            <collision-poly>
+                                <point x="0.207031" y="0.207031" />
+                                <point x="0.5" y="0.0859375" />
+                                <point x="0.792969" y="0.207031" />
+                                <point x="0.914063" y="0.5" />
+                                <point x="0.792969" y="0.792969" />
+                                <point x="0.5" y="0.914063" />
+                                <point x="0.207031" y="0.792969" />
+                                <point x="0.0859375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_repCooldown" sid="172962184254431">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="damBoxID" sid="345089288043107" type="number" />
+                    <instance-variable name="repTime" sid="397698511988158" type="number" />
+                </instance-variables>
+                <container>
+                    <type>txt_DamItem</type>
+                    <type>spr_repCooldown</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628102572274277" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_ammoDec" sid="534380415395441">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ammoUID" sid="153196184553410" type="number" />
+                    <instance-variable name="ammoIndex" sid="595496602688641" type="number" />
+                </instance-variables>
+                <container>
+                    <type>txt_ShpInfoAmmo</type>
+                    <type>spr_ammoInc</type>
+                    <type>spr_ammoDec</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291269797673038" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_ammoInc" sid="881868255617799">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ammoUID" sid="538328927858760" type="number" />
+                    <instance-variable name="ammoIndex" sid="402217045334388" type="number" />
+                </instance-variables>
+                <container>
+                    <type>txt_ShpInfoAmmo</type>
+                    <type>spr_ammoInc</type>
+                    <type>spr_ammoDec</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838820948164188" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_trc2" sid="584103250282509">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="404237098223631">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="AdjustHSL">
+                        <effect id="hsladjust" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380452118706705" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_BRDRenemyList" sid="496512876656789">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="targetedShipID" sid="653465351065764" type="number" />
+                </instance-variables>
+                <container>
+                    <type>txt_enemyList</type>
+                    <type>spr_BRDRenemyList</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="728425140588179" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_BRDRwpnList" sid="601496470286142">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="972724331116734">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="681741994871980" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_tractor" sid="130501976737204">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107949162055653" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_PowerBarMax" sid="601082880931107">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948092374999844" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_PowerBarO" sid="333252928203705">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229525894916093" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_options" sid="828154461669608">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="active" sid="695588897248754" type="boolean" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="Brightness">
+                        <effect id="brightness" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283978310422663" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\video\Dropbox\construct assets\options_logo.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.25" />
+                                <point x="0.5" y="0.140625" />
+                                <point x="0.75" y="0.25" />
+                                <point x="0.789063" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.851563" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.210938" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spr_Bright" sid="686487503357110">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="764405316464618">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405069077590583" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\video\Dropbox\construct assets\brightLight.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="list">
+            <object-type name="List_enemyShip" sid="136369795220130">
+                <plugin id="List" />
+            </object-type>
+            <object-type name="List_shipType" sid="644177384580003">
+                <plugin id="List" />
+            </object-type>
+            <object-type name="List_shipClass" sid="700558567460538">
+                <plugin id="List" />
+            </object-type>
+            <object-type name="List_pctype" sid="819056545039882">
+                <plugin id="List" />
+            </object-type>
+            <object-type name="List_pcShip" sid="709533150209833">
+                <plugin id="List" />
+            </object-type>
+            <object-type name="List_enemyType" sid="612743671350925">
+                <plugin id="List" />
+            </object-type>
+        </object-folder>
+        <object-folder name="CSV">
+            <object-type global="1" name="CSV" sid="223825567902159">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrEngines" sid="994655645165256">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrItemID" sid="286365718765474">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrItems" sid="725469803071608">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrShipClass" sid="763654920993564">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrShipsList" sid="868297485470781">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_arrWeapons" sid="833027797804954">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_equippedEngData" sid="922382396504639">
+                <plugin id="Rex_CSV" />
+            </object-type>
+            <object-type global="1" name="csv_dicPlaceDef" sid="361118925782375">
+                <plugin id="Rex_CSV" />
+            </object-type>
+        </object-folder>
+        <object-folder name="spritefont">
+            <object-type name="sprF_pause" sid="721716020407280">
+                <plugin id="Spritefont2" />
+                <instance-variables>
+                    <instance-variable name="isPaused" sid="828546733073836" type="boolean" />
+                </instance-variables>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-type name="TiledBackground" sid="6434774206558606">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Mouse" sid="523076395133177">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="969396532927585">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Function" sid="1253039906937587">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="AJAX" sid="502673498037050">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Browser" sid="246117592048541">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="NWjs" sid="169776793513165">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type global="1" name="dic_placeDef" sid="367928372911117">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="Button" sid="751423831753875">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button2" sid="512620313155425">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button3" sid="548504116615294">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Audio" sid="618600311490298">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="btt_save" sid="572119758149148">
+            <plugin id="Button" />
+            <container>
+                <type>btt_Quit</type>
+                <type>spr_BrdrOpt</type>
+                <type>btt_save</type>
+                <type>btt_Load</type>
+            </container>
+        </object-type>
+        <object-type name="btt_Load" sid="791571299397941">
+            <plugin id="Button" />
+            <container>
+                <type>btt_Quit</type>
+                <type>spr_BrdrOpt</type>
+                <type>btt_save</type>
+                <type>btt_Load</type>
+            </container>
+        </object-type>
+        <object-type name="btt_Quit" sid="310288854233378">
+            <plugin id="Button" />
+            <container>
+                <type>btt_Quit</type>
+                <type>spr_BrdrOpt</type>
+                <type>btt_save</type>
+                <type>btt_Load</type>
+            </container>
+        </object-type>
+        <object-type name="spr_BrdrOpt" sid="745035227866853">
+            <plugin id="Sprite" />
+            <container>
+                <type>btt_Quit</type>
+                <type>spr_BrdrOpt</type>
+                <type>btt_save</type>
+                <type>btt_Load</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157747118470743" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.12" y="0.145" />
+                        <image-point name="Imagepoint 2" x="0.115" y="0.445" />
+                        <image-point name="Imagepoint 3" x="0.115" y="0.725" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_BrdrCnfrm" sid="773997144359421">
+            <plugin id="Sprite" />
+            <container>
+                <type>spr_BrdrCnfrm</type>
+                <type>btt_exit</type>
+                <type>btt_No</type>
+                <type>txt_cnfrm</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944351989907436" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.12" y="0.145" />
+                        <image-point name="Imagepoint 2" x="0.115" y="0.445" />
+                        <image-point name="Imagepoint 3" x="0.115" y="0.725" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_cnfrm" sid="977629461548526">
+            <plugin id="Text" />
+            <container>
+                <type>spr_BrdrCnfrm</type>
+                <type>btt_exit</type>
+                <type>btt_No</type>
+                <type>txt_cnfrm</type>
+            </container>
+        </object-type>
+        <object-type name="btt_exit" sid="267346998718884">
+            <plugin id="Button" />
+            <container>
+                <type>spr_BrdrCnfrm</type>
+                <type>btt_exit</type>
+                <type>btt_No</type>
+                <type>txt_cnfrm</type>
+            </container>
+        </object-type>
+        <object-type name="btt_No" sid="421074571164459">
+            <plugin id="Button" />
+            <container>
+                <type>spr_BrdrCnfrm</type>
+                <type>btt_exit</type>
+                <type>btt_No</type>
+                <type>txt_cnfrm</type>
+            </container>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="fml_Buttons" plugin-id="Button" sid="8077374308549393">
+            <members>
+                <member>btt_Eng</member>
+                <member>btt_Shld</member>
+                <member>btt_Wpn</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="type" sid="757873753043882" type="string" />
+            </instance-variables>
+        </family>
+        <family name="fml_ShipSections" plugin-id="Sprite" sid="511396340318562">
+            <members>
+                <member>spr_Aft</member>
+                <member>spr_Hull</member>
+                <member>spr_Port</member>
+                <member>spr_Prow</member>
+                <member>spr_SB</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="HPleft" sid="101501437379049" type="number" />
+                <instance-variable name="place" sid="345367563095568" type="number" />
+                <instance-variable name="itemCount" sid="493115357234685" type="number" />
+                <instance-variable name="arrID" sid="727637828189188" type="number" />
+                <instance-variable comment="which Shield is present" name="Shield" sid="880538708855600" type="number" />
+                <instance-variable name="glow" sid="625946368386045" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="457342597923282">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="586305272883139">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="852929067396427">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
+        </family>
+        <family name="fml_ShipLabels" plugin-id="Text" sid="380194875999021">
+            <members>
+                <member>txt_LabelAft</member>
+                <member>txt_LabelHull</member>
+                <member>txt_LabelPort</member>
+                <member>txt_LabelProw</member>
+                <member>txt_LabelSB</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="445692752976700" type="number" />
+            </instance-variables>
+        </family>
+        <family name="fml_arrShipSectionInv" plugin-id="Arr" sid="315867766812315">
+            <members>
+                <member>arr_PCShipAft</member>
+                <member>arr_PCShipHull</member>
+                <member>arr_PCShipPort</member>
+                <member>arr_PCShipProw</member>
+                <member>arr_PCShipSB</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="816797057313511" type="number" />
+                <instance-variable comment="if and which shield generator is present" name="shldID" sid="978973935717877" type="number" />
+            </instance-variables>
+        </family>
+        <family name="fml_Labels" plugin-id="Text" sid="278006535696229">
+            <members>
+                <member>txt_LabelEng</member>
+                <member>txt_LabelEquip</member>
+                <member>txt_LabelWpns</member>
+            </members>
+        </family>
+        <family name="fml_items" plugin-id="Sprite" sid="777168735200817">
+            <members>
+                <member>spr_engines</member>
+                <member>spr_equipment</member>
+                <member>spr_weapons</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="type" sid="332509474679823" type="string" />
+                <instance-variable name="x0" sid="475364301044273" type="number" />
+                <instance-variable name="y0" sid="339775792357838" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="984218570110352">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_pcShldDGRM" plugin-id="Sprite" sid="660577354754554">
+            <members>
+                <member>spr_Shld1</member>
+                <member>spr_Shld2</member>
+                <member>spr_Shld3</member>
+                <member>spr_Shld4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="currStrength" sid="979485212746552" type="number" />
+                <instance-variable name="place" sid="616832093655899" type="number" />
+                <instance-variable name="isEnabled" sid="779859169352529" type="boolean" />
+                <instance-variable name="shldID" sid="114228969772884" type="number" />
+                <instance-variable name="isCharging" sid="116975151633686" type="boolean" />
+                <instance-variable comment="original strength of shield" name="strength" sid="226532759261116" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="945262731925584">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="429266034470409">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_enemyShldHUD" plugin-id="Sprite" sid="397732658255133">
+            <members>
+                <member>spr_shldE1</member>
+                <member>spr_shldE2</member>
+                <member>spr_shldE3</member>
+                <member>spr_shldE4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="320830821695185" type="number" />
+                <instance-variable name="currStrength" sid="205163265653777" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="553458990904896">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_HUDshpEnemy" plugin-id="Sprite" sid="604872333751899">
+            <members>
+                <member>spr_aftEnemyDGRM</member>
+                <member>spr_hullEnemyDGRM</member>
+                <member>spr_portEnemyDGRM</member>
+                <member>spr_prowEnemyDGRM</member>
+                <member>spr_SBenemyDGRM</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Place" sid="639603172297624" type="number" />
+                <instance-variable name="currStrength" sid="189989828059547" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="496294028692430">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
+        </family>
+        <family name="fml_enemyHUDItems" plugin-id="Sprite" sid="193283050568136">
+            <members>
+                <member>spr_aftEnemyDGRM</member>
+                <member>spr_HUDenemy</member>
+                <member>spr_hullEnemyDGRM</member>
+                <member>spr_portEnemyDGRM</member>
+                <member>spr_prowEnemyDGRM</member>
+                <member>spr_SBenemyDGRM</member>
+                <member>spr_shldE1</member>
+                <member>spr_shldE2</member>
+                <member>spr_shldE3</member>
+                <member>spr_shldE4</member>
+            </members>
+        </family>
+        <family name="fml_arrEnemyWPN" plugin-id="Arr" sid="786535859800161">
+            <members>
+                <member>arr_enemyWPN_0</member>
+                <member>arr_enemyWPN_1</member>
+                <member>arr_enemyWPN_2</member>
+                <member>arr_enemyWPN_3</member>
+                <member>arr_enemyWPN_4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="223006373207989" type="number" />
+                <instance-variable name="shield" sid="911450490147986" type="number" />
+                <instance-variable name="enemyUID" sid="790435925869442" type="number" />
+            </instance-variables>
+        </family>
+        <family name="fml_enemyMRKShld" plugin-id="Sprite" sid="374290622279774">
+            <members>
+                <member>spr_shldMarkE1</member>
+                <member>spr_shldMarkE2</member>
+                <member>spr_shldMarkE3</member>
+                <member>spr_shldMarkE4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="563697042673361" type="number" />
+                <instance-variable name="currStrength" sid="537334279229787" type="number" />
+                <instance-variable name="isEnabled" sid="802338147360532" type="boolean" />
+                <instance-variable name="type" sid="809183609691378" type="number" />
+                <instance-variable name="containerUID" sid="414203440482022" type="number" />
+                <instance-variable name="isCharging" sid="391942531998596" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="799450120839854">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_enemyMRKArm" plugin-id="Sprite" sid="744507642195054">
+            <members>
+                <member>spr_armMarkE0</member>
+                <member>spr_armMarkE1</member>
+                <member>spr_armMarkE2</member>
+                <member>spr_armMarkE3</member>
+                <member>spr_armMarkE4</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="place" sid="402431099919122" type="number" />
+                <instance-variable name="currStrength" sid="161962098646852" type="number" />
+                <instance-variable name="containerUID" sid="360280239611739" type="number" />
+            </instance-variables>
+        </family>
+        <family name="fml_arrAllInventory" plugin-id="Arr" sid="665019811005694">
+            <members>
+                <member>arr_InvEnemy</member>
+                <member>arr_InvPCship</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="source" sid="960709900755604" type="string" />
+            </instance-variables>
+        </family>
+        <family name="fml_allShips" plugin-id="Sprite" sid="584439544556332">
+            <members>
+                <member>spr_shipEnemy</member>
+                <member>spr_shipPC</member>
+                <member>spr_starbase</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="shipType" sid="497031281365078" type="string" />
+                <instance-variable name="engineCount" sid="878766730762927" type="number" />
+                <instance-variable name="isInvulnerable" sid="164965478338174" type="boolean" />
+                <instance-variable name="isS0Destroyed" sid="180951019614360" type="boolean" />
+                <instance-variable name="isS1Destroyed" sid="457775829666437" type="boolean" />
+                <instance-variable name="isS2Destroyed" sid="283418963222769" type="boolean" />
+                <instance-variable name="isS3Destroyed" sid="178215710004453" type="boolean" />
+                <instance-variable name="isS4Destroyed" sid="355120555011198" type="boolean" />
+                <instance-variable name="isDocked" sid="975737300003714" type="boolean" />
+                <instance-variable name="isDocking" sid="820951308273391" type="boolean" />
+                <instance-variable name="crewCount" sid="693002587614276" type="number" />
+                <instance-variable name="enginePow" sid="436286793176704" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer2" sid="587927194900970">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_HUDshpPC" plugin-id="Sprite" sid="724808472120148">
+            <members>
+                <member>spr_aftPCDGRM</member>
+                <member>spr_hullPCDGRM</member>
+                <member>spr_portPCDGRM</member>
+                <member>spr_prowPCDGRM</member>
+                <member>spr_SBPCDGRM</member>
+            </members>
+        </family>
+        <family name="fml_tstBox" plugin-id="Button" sid="326376341946442">
+            <members>
+                <member>Button</member>
+                <member>Button2</member>
+                <member>Button3</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="power" sid="422024599872392" type="number" />
+                <instance-variable name="isOn" sid="129375695200260" type="boolean" />
+            </instance-variables>
+        </family>
+        <family name="fml_PSD_txtWPNS" plugin-id="Text" sid="727378087937724">
+            <members>
+                <member>txt_weapons</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Timer" sid="474845379381679">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="fml_PSD_sprites" plugin-id="Sprite" sid="952803349741373">
+            <members>
+                <member>spr_explosion</member>
+                <member>spr_explosion2</member>
+                <member>spr_explosion3</member>
+                <member>spr_glowEng</member>
+                <member>spr_glowWpn</member>
+                <member>spr_hitShld</member>
+                <member>spr_shipEnemy</member>
+                <member>spr_shipPC</member>
+                <member>spr_Shld1</member>
+                <member>spr_Shld2</member>
+                <member>spr_Shld3</member>
+                <member>spr_Shld4</member>
+                <member>spr_shldE1</member>
+                <member>spr_shldE2</member>
+                <member>spr_shldE3</member>
+                <member>spr_shldE4</member>
+                <member>spr_starbase</member>
+                <member>spr_target</member>
+                <member>spr_weapon</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Start.xml</layout>
+        <layout>Diagram.xml</layout>
+        <layout>Main.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES_main.xml</event-sheet>
+        <event-sheet>ES_diagram.xml</event-sheet>
+        <event-sheet>Array_Functions_old.xml</event-sheet>
+        <event-sheet>DataObjectFunctions.xml</event-sheet>
+        <event-sheet>ES_enemyAI.xml</event-sheet>
+        <event-sheet>ES_start.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="14" />
+        <global-instance type="Keyboard" uid="32" />
+        <global-instance type="Function" uid="33" />
+        <global-instance type="AJAX" uid="57" />
+        <global-instance type="Browser" uid="138" />
+        <global-instance type="NWjs" uid="144" />
+        <global-instance type="Audio" uid="203">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <sound-folder name="weapon">
+            <file name="imp_laser_7.m4a" />
+            <file name="imp_laser_7.ogg" />
+            <file name="imp_laser_8.m4a" />
+            <file name="imp_laser_8.ogg" />
+        </sound-folder>
+        <file name="Explosion06.ogg" />
+        <file name="Explosion08.m4a" />
+        <file name="Explosion08.ogg" />
+        <file name="Explosion09.m4a" />
+        <file name="Explosion09.ogg" />
+        <file name="Explosion15.m4a" />
+        <file name="Explosion15.ogg" />
+        <file name="Explosion19.ogg" />
+        <file name="Mine.m4a" />
+        <file name="Mine.ogg" />
+        <file name="installSound.m4a" />
+        <file name="installSound.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="CSV_data">
+            <file name="arrShipsList.csv" />
+            <file name="arrShipClass.csv" />
+            <file name="arrItemID.csv" />
+            <file name="arrEngines.csv" />
+            <file name="equippedEngData.csv" />
+            <file name="arrItems.csv" />
+            <file name="arrWeapons.csv" />
+            <file name="dicPlaceDef.csv" />
+        </file-folder>
+    </files-folder>
+</c2project>

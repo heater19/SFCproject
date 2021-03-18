@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_start</name>
+    <events>
+        <variable constant="0" name="GameFolder" sid="744144190517996" static="0" type="text"></variable>
+        <variable constant="0" name="mainSave" sid="369855225591332" static="0" type="text"></variable>
+        <comment>!!!TODO - set names for all ships&#x0D;&#x0A;warp in effect;&#x0D;&#x0A;sounds;&#x0D;&#x0A;recharge effects for repairing items;&#x0D;&#x0A;toHit statistics;&#x0D;&#x0A;enemy engine effects;&#x0D;&#x0A;capacitor effects;&#x0D;&#x0A;pause function;</comment>
+        <event-block sid="110176757550179">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="442824261803415" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set CSS style" sid="879255149044731" type="btn_options">
+                    <param id="0" name="Property name">&quot;background-color&quot;</param>
+                    <param id="1" name="Value">&quot;#4CAF50&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="699347981932873" type="btn_options">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;white&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="111083625382200" type="btn_options">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="673051636951802" type="System">
+                    <param id="0" name="Variable">GameFolder</param>
+                    <param id="1" name="Value">NWjs.UserFolder&amp;&quot;Saved Games\SFCProj&quot;</param>
+                </action>
+                <action id="14" name="Log" sid="541637655658822" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;Game folder is &quot;&amp;GameFolder</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="183584357807577">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="202922745336358" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="699370296335711">
+                    <conditions>
+                        <condition id="0" name="Path exists" sid="471746691120744" type="NWjs">
+                            <param id="0" name="Path">GameFolder</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="706534840893760" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">GameFolder&amp;&quot; exists&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982079438258352">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="554485176083649" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="729229783141233" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">GameFolder&amp;&quot; does not exist&quot;</param>
+                        </action>
+                        <action id="3" name="Create folder" sid="861671908194310" type="NWjs">
+                            <param id="0" name="Path">GameFolder</param>
+                        </action>
+                        <action id="14" name="Log" sid="440184432379781" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;created folder - &quot;&amp;gamefolder</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="935233958665157">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="List files" sid="129293382368930" type="NWjs">
+                            <param id="0" name="Path">GameFolder</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="444164036219787">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="175784838380164" type="System">
+                            <param id="0" name="First value">NWjs.ListCount</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="712485867243997" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">GameFolder&amp;&quot; is empty&quot;</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="241072370517933" type="btn_cont">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="427645303866855">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="463464093301047" type="System" />
+                        <condition id="-8" name="Compare two values" sid="923703150213828" type="System">
+                            <param id="0" name="First value">NWjs.ListCount</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="14" name="Log" sid="821942676089780" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">GameFolder&amp;&quot; folder has &quot;&amp;NWjs.ListCount&amp;&quot; files&quot;</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="334627379088707" type="btn_cont">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="538896575146978">
+                            <conditions>
+                                <condition id="-10" name="For" sid="728770398072806" type="System">
+                                    <param id="0" name="Name">&quot;filelist&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">NWjs.ListCount</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="14" name="Log" sid="876650797434815" type="Browser">
+                                    <param id="0" name="Type">0</param>
+                                    <param id="1" name="Message">NWjs.ListAt(loopindex)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="245720885987336">
+            <conditions>
+                <condition id="0" name="On clicked" sid="777793775572485" type="btn_cont" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-37" name="Load" sid="754592126569070" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="853421459887533">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Request URL" sid="976389914616116" type="AJAX">
+                            <param id="0" name="Tag">&quot;loadFile&quot;</param>
+                            <param id="1" name="URL">GameFolder&amp;&quot;\&quot;&amp;&quot;mysave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="839895315476848">
+            <conditions>
+                <condition id="0" name="On completed" sid="854276356533160" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadFile&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-38" name="Load from JSON" sid="311734292085795" type="System">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310544992150039">
+            <conditions>
+                <condition id="1" name="On error" sid="578942950655677" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadFile&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="412069208779024" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">GameFolder&amp;&quot;\&quot;&amp;&quot;mysave failed to load&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="677944957938223">
+            <conditions>
+                <condition id="0" name="On clicked" sid="602669861995580" type="btn_options" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="488181388170621">
+            <conditions>
+                <condition id="0" name="On clicked" sid="326172488839391" type="btn_shipYard" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="436051329511753" type="System">
+                    <param id="0" name="Layout">&quot;Diagram&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970372911032474">
+            <conditions>
+                <condition id="0" name="On clicked" sid="973413669959375" type="btn_skirmish" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="570470470920647" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="425084924940516" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534176172115700">
+            <conditions>
+                <condition id="0" name="On clicked" sid="664019542086980" type="btn_RTM" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="653890218375100" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="934222036799443" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="899229854590278">
+            <conditions>
+                <condition id="0" name="On clicked" sid="476694895885891" type="btn_exit" />
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="169548949599806" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="667462005656580">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="123852878198250" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="736783992155995">
+                    <conditions>
+                        <condition id="0" name="Compare selection" sid="651456871352933" type="List_pcShip">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Index">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="736186395186885" type="List_pctype">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Set selection" sid="121325901265694" type="List_pctype">
+                            <param id="0" name="Index">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="441194802827543">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="332756844263854" type="System" />
+                        <condition id="0" name="Compare selection" sid="916433874380798" type="List_pcShip">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Index">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="246357760588369" type="List_pctype">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
