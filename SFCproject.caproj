@@ -509,9 +509,6 @@
             <object-type name="btn_apply" sid="390513135398396">
                 <plugin id="Button" />
             </object-type>
-            <object-type name="btn_RTM" sid="417446022631394">
-                <plugin id="Button" />
-            </object-type>
             <object-type name="btn_cont" sid="866527998704862">
                 <plugin id="Button" />
                 <instance-variables>
@@ -780,14 +777,7 @@
                     </instance-variables>
                 </object-type>
             </object-folder>
-            <object-folder name="Start">
-                <object-type name="Text" sid="791660336499361">
-                    <plugin id="Text" />
-                </object-type>
-                <object-type name="Text2" sid="331093816331745">
-                    <plugin id="Text" />
-                </object-type>
-            </object-folder>
+            <object-folder name="Start" />
         </object-folder>
         <object-folder name="sprites">
             <object-folder name="particles">
@@ -2833,22 +2823,10 @@
             </object-type>
         </object-folder>
         <object-folder name="list">
-            <object-type name="List_enemyShip" sid="136369795220130">
-                <plugin id="List" />
-            </object-type>
             <object-type name="List_shipType" sid="644177384580003">
                 <plugin id="List" />
             </object-type>
             <object-type name="List_shipClass" sid="700558567460538">
-                <plugin id="List" />
-            </object-type>
-            <object-type name="List_pctype" sid="819056545039882">
-                <plugin id="List" />
-            </object-type>
-            <object-type name="List_pcShip" sid="709533150209833">
-                <plugin id="List" />
-            </object-type>
-            <object-type name="List_enemyType" sid="612743671350925">
                 <plugin id="List" />
             </object-type>
         </object-folder>
@@ -2914,15 +2892,6 @@
         </object-type>
         <object-type global="1" name="dic_placeDef" sid="367928372911117">
             <plugin id="Dictionary" />
-        </object-type>
-        <object-type name="Button" sid="751423831753875">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Button2" sid="512620313155425">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Button3" sid="548504116615294">
-            <plugin id="Button" />
         </object-type>
         <object-type name="Audio" sid="618600311490298">
             <plugin id="Audio" />
@@ -3281,17 +3250,6 @@
                 <member>spr_prowPCDGRM</member>
                 <member>spr_SBPCDGRM</member>
             </members>
-        </family>
-        <family name="fml_tstBox" plugin-id="Button" sid="326376341946442">
-            <members>
-                <member>Button</member>
-                <member>Button2</member>
-                <member>Button3</member>
-            </members>
-            <instance-variables>
-                <instance-variable name="power" sid="422024599872392" type="number" />
-                <instance-variable name="isOn" sid="129375695200260" type="boolean" />
-            </instance-variables>
         </family>
         <family name="fml_PSD_txtWPNS" plugin-id="Text" sid="727378087937724">
             <members>

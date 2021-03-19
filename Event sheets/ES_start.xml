@@ -165,6 +165,10 @@
                 <action id="-38" name="Load from JSON" sid="311734292085795" type="System">
                     <param id="0" name="JSON">AJAX.LastData</param>
                 </action>
+                <action id="14" name="Log" sid="394880673955524" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">GameFolder&amp;&quot;\&quot;&amp;&quot;mysave loaded successfully&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="310544992150039">
@@ -180,12 +184,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="677944957938223">
-            <conditions>
-                <condition id="0" name="On clicked" sid="602669861995580" type="btn_options" />
-            </conditions>
-            <actions />
-        </event-block>
         <event-block sid="488181388170621">
             <conditions>
                 <condition id="0" name="On clicked" sid="326172488839391" type="btn_shipYard" />
@@ -200,31 +198,7 @@
             <conditions>
                 <condition id="0" name="On clicked" sid="973413669959375" type="btn_skirmish" />
             </conditions>
-            <actions>
-                <action id="-4" name="Set layer visible" sid="570470470920647" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="425084924940516" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="534176172115700">
-            <conditions>
-                <condition id="0" name="On clicked" sid="664019542086980" type="btn_RTM" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set layer visible" sid="653890218375100" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="934222036799443" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
         <event-block sid="899229854590278">
             <conditions>
@@ -233,44 +207,6 @@
             <actions>
                 <action id="1" name="Close" sid="169548949599806" type="Browser" />
             </actions>
-        </event-block>
-        <event-block sid="667462005656580">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="123852878198250" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="736783992155995">
-                    <conditions>
-                        <condition id="0" name="Compare selection" sid="651456871352933" type="List_pcShip">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Index">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set enabled" sid="736186395186885" type="List_pctype">
-                            <param id="0" name="Mode">0</param>
-                        </action>
-                        <action id="0" name="Set selection" sid="121325901265694" type="List_pctype">
-                            <param id="0" name="Index">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="441194802827543">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="332756844263854" type="System" />
-                        <condition id="0" name="Compare selection" sid="916433874380798" type="List_pcShip">
-                            <param id="0" name="Comparison">1</param>
-                            <param id="1" name="Index">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set enabled" sid="246357760588369" type="List_pctype">
-                            <param id="0" name="Mode">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
