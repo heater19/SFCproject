@@ -1187,46 +1187,6 @@
                 </object-type>
             </object-folder>
             <object-folder name="backgrounds">
-                <object-type name="spr_bckveilneb" sid="178632836906000">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979167909773445" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="spr_bckClouds" sid="925391280380764">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947559893246122" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\video\Dropbox\construct assets\backgrounds\starbackground.jpg" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="spr_bckveilneb2" sid="122320860293879">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817151022875665" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="spr_bckveilneb3" sid="313102244753024">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608021206069803" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="spr_bckveilneb4" sid="547112781497950">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712739588985627" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Fox81\Downloads\bsc.tar\bsc\1024\yneg.png" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
                 <object-type name="spr_bckEffect" sid="228164007144639">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -2831,9 +2791,6 @@
             </object-type>
         </object-folder>
         <object-folder name="CSV">
-            <object-type global="1" name="CSV" sid="223825567902159">
-                <plugin id="Rex_CSV" />
-            </object-type>
             <object-type global="1" name="csv_arrEngines" sid="994655645165256">
                 <plugin id="Rex_CSV" />
             </object-type>
@@ -3293,7 +3250,6 @@
     <event-folder>
         <event-sheet>ES_main.xml</event-sheet>
         <event-sheet>ES_diagram.xml</event-sheet>
-        <event-sheet>Array_Functions_old.xml</event-sheet>
         <event-sheet>DataObjectFunctions.xml</event-sheet>
         <event-sheet>ES_enemyAI.xml</event-sheet>
         <event-sheet>ES_start.xml</event-sheet>

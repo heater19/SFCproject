@@ -218,12 +218,6 @@
                 <source>pc</source>
             </instance-variables>
         </instance>
-        <instance type="CSV" uid="145">
-            <properties>
-                <delimiter>,</delimiter>
-                <eval-mode>No</eval-mode>
-            </properties>
-        </instance>
         <instance type="csv_dicPlaceDef" uid="188">
             <properties>
                 <delimiter>,</delimiter>
